@@ -1,0 +1,18 @@
+{
+  "name": "gdocs-rich-presence",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bowser65",
+  "license": "AGPL-3.0",
+  "private": true,
+  "scripts": {
+    "dev": "parcel script.js",
+    "build": "parcel build script.js"
+  },
+  "dependencies": {
+    "discord-rpc": "^3.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^1.11.0"
+  }
+}

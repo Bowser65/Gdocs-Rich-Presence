@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "Google Docs Rich Presence",
+  "description": "Add Discord rich presence support to Google Docs",
+  "version": "0.0.1",
+
+  "icons": {
+    "128": "assets/images/128.png",
+    "48": "assets/images/48.png",
+    "32": "assets/images/32.png",
+    "16": "assets/images/16.png"
+  },
+
+  "content_scripts": [{
+    "js": ["script.js"],
+    "matches": [
+      "docs.google.com/*"
+    ],
+    "run_at": "document_start",
+    "all_frames": true
+  }],
+
+  "browser_action": {
+   "default_icon": "assets/images/logo.png",
+   "default_popup": "window.html"
+  },
+
+  "background": {
+    "scripts": [
+      "script.js"
+    ]
+	},
+
+  "permissions": [
+    "storage"
+  ]
+}
